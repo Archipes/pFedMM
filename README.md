@@ -1,6 +1,6 @@
 # Mixture of Experts for Personalized Federated Learning under Mixture Data Distributions in Edge Computing Networks
 
-This repository is the official implementation of [Mixture of Experts for Personalized Federated Learning under Mixture Data Distributions in Edge Computing Networks]
+This repository is the implementation of [Mixture of Experts for Personalized Federated Learning under Mixture Data Distributions in Edge Computing Networks]
 
 Personalized federated learning (PFL) is essential for edge computing networks with heterogeneous clients.
 In practice, client data exhibit complex and non-stationary input distributions with marginal drift, and many clients participate intermittently or may be absent due to network instability and resource constraints.
@@ -8,7 +8,7 @@ Existing approaches mainly focus on conditional distribution personalization, wh
 In this paper, we model each client’s data as a mixture of shared latent base distributions, reducing personalization to learning conditional predictors and client-specific mixture weights.
 We adopt a lightweight mixture of experts (MoE) model with a shared backbone and multiple expert heads, where each expert captures a base-wise conditional distribution, shared batch normalization mitigates marginal distribution shift, and the PFL objective becomes a linear mixture maximum likelihood.
 Furthermore, we propose a PFL algorithm via MoE under mixture data distributions (\textit{pFedMM}) which incorporates prior information to jointly update model parameters and mixture weights. \textit{pFedMM} enables personalization for absent clients through one step mixture weight evaluation without additional training.
-Extensive experiments demonstrate that pFedMM improves accuracy by about 8.8\% over baselines, achieves up to 5.8\% gains for unseen clients, and exhibits larger advantages on more complex datasets. Our code is available at \url{https://github.com/Archipes/pFedMM}.
+Extensive experiments demonstrate that pFedMM improves accuracy by about 8.8\% over baselines, achieves up to 5.8\% gains for unseen clients, and exhibits larger advantages on more complex datasets.
 
 ## Requirements
 
@@ -38,7 +38,8 @@ algorithms:
 * APFL ([Deng et al. 2020](https://arxiv.org/abs/2003.13461))
 * q-FFL ([Li et al. 2020](https://openreview.net/forum?id=ByexElSYDr))
 * AFL ([Mohri et al. 2019](http://proceedings.mlr.press/v97/mohri19a.html))
-* FedEN ([Marfoq et al. 2021](https://proceedings.neurips.cc/paper_files/paper/2021/file/82599a4ec94aca066873c99b4c741ed8-Paper.pdf))
+* FedEM ([Marfoq et al. 2021](https://proceedings.neurips.cc/paper_files/paper/2021/file/82599a4ec94aca066873c99b4c741ed8-Paper.pdf))
+* FedGMM ([Wu et al. 2023](https://github.com/zshuai8/FedGMM_ICML2023))
 * pFedMoE ([Li et al. 2026 ](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11359536))
 
 ## Datasets
